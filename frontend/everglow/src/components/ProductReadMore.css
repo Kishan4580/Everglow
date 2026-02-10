@@ -1,0 +1,7 @@
+.zoom-effect {
+  background-image: var(--img-zoom);
+  background-position: var(--x) var(--y);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}

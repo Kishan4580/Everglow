@@ -1,0 +1,10 @@
+{
+    "productName" : "abv",
+    "prductDesc" : "abcd",
+    "productImages" : [],
+    "skuNo" : 123,
+    "category" : "",
+    "reviews" : [{"reviewerName" : "abc", "review" : "good product", "email" : "avb@gmail.com", "rating" : 4.5,"reviewDate" : "", "reviewerImg" : "" }],
+    "ranges" : [{ "quantity" : "125ml", "price" : 279, "dimension" : {"l" : 20, "b" : 20, "v": 60, "u" : "cm"}, "isBiodegradable" : true}]
+
+}

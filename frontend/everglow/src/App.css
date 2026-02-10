@@ -1,0 +1,39 @@
+#root {
+  margin: 0;
+  --bg-primary-color : #DFD7C7;
+}
+.spinz-color{
+  background-color: var(--bg-primary-color);
+}
+
+.light-purple {
+  background-color: #65647C;
+}
+/* ul li::before{
+ content: url("./assets/check-circled-white.png");
+ display: inline-block;
+ height : 2.3em;
+ width: 2.3em;
+} */
+@font-face {
+  font-family: MonaSans;
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url('https://demo.agnidesigns.com/everglow/wp-content/themes/everglow/assets/fonts/MonaSans/Mona-Sans.woff2') format('woff2');
+}
+.step-desc{
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 22px 0px;
+}
+.step {
+  font-size: 2.5rem;  
+}
+.country::before {
+ display: inline-block;
+  width: 32px;
+  height: 24px;
+  background-image: url('./assets/flags.png');
+  background-size: auto; /* ya total width/height ke hisab se adjust */
+}

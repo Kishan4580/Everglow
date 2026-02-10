@@ -1,0 +1,15 @@
+/node_modules
+
+GOOGLE_OAUTH_SECRET.json
+
+/backend/public/
+backend/useOAUTH.js
+
+# Local HTTPS server certificates and config
+backend/localhost-cert.pem
+backend/localhost-privkey.pem
+backend/localhost.conf
+backend/credentials.json
+backend/.env
+
+replacements.txt

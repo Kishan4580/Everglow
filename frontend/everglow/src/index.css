@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+*,
+* ::after,
+::before {
+  box-sizing: border-box;
+}
+a {
+  font-weight: 500;
+}
+.btn {
+  /* transform: rotate(180deg); */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+.btn:hover {
+  color: var(--text-color) !important;
+  border: none !important;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--btn-hoverEffect);
+  transition: all 0.2s linear;
+}
+.btn:hover::before {
+  bottom: 0px;
+}
+html {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: "Mona Sans", "sans-serif";
+}
+.mona-sans {
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+h1 {
+  font-size: clamp(1.875rem, 5vw, 2.625rem);
+  line-height: 1.1;
+}
+h2 {
+  font-size: clamp(1.625rem, 4vw, 1.875rem);
+  font-weight: 600;
+}
+h3 {
+  font-size: clamp(1.225rem, 3vw, 1.475rem);
+  font-weight: 500;
+}
+/* p{
+  font-size: clamp(0.95rem, 0.75rem + ((1vw - 0.2rem) * 1), 0.75rem);
+  font-weight: 400;
+  line-height: 1.5;
+} */
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+} */
+/* @media (prefers-color-scheme: light) {
+  :root { */
+/* color: #213547; */
+/* background-color: #ffffff;
+  } */
+/* a:hover {
+    color: #747bff;
+  } */
+/* } */
+/* .line::after{
+content: "";
+display: inline-block;
+height: 1px;
+width: 100%;
+background-color: black;
+} */
+/* .zoom-effect {
+  --img-zoom: none;
+  --x: 50%;
+  --y: 50%;
+  overflow: hidden;
+  cursor: crosshair;
+  background-image: var(--img-zoom);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: var(--x) var(--y);
+  transition: background-size 0.3s ease;
+} */
+.zoom-effect:hover {
+  background-size: 300%;
+}
+
+#sort-products options:hover {
+  background-color: rgb(64, 64, 218);
+}
+
+.mobile-menu li {
+  border-bottom: 1px solid black;
+}
