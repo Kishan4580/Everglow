@@ -2,9 +2,6 @@ const { sendMail } = require("./useNodemailer")
 
 
 const jwt = require("jsonwebtoken")
-const dotenv = require("dotenv")
-const isSucc = dotenv.config({ path: "./config/.env" })
-// console.log("If success to load .env file, print parsed object .", isSucc);
 
 const clientURL = process.env.client_URL;
 // console.log(clientURL);
@@ -38,5 +35,5 @@ module.exports = {
 }
 
 const generateToken = async (payload) => {
-    return jwt.sign({ payload }, process.env.JWTs_SECRET, { expiresIn: "5m" });
+    return jwt.sign({ payload }, process.env.JWT_SECRET, { expiresIn: "5m" });
 }

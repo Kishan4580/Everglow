@@ -1,6 +1,6 @@
 
 // nodejs core modules
-require('dotenv').config(); // Load environment variables from .env file
+require('dotenv').config({ path: join(__dirname, 'config', '.env') }); // Load environment variables from .env file
 
 const http2 = require('http2');
 const fs = require('fs').promises;
